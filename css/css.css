@@ -1,0 +1,390 @@
+/*This is the code for the fonts which has been used (Source Sans 3 and Cal Sans)*/
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+	background-color: #9c1c34;
+	display: flex;
+	height: 8.5vw
+}
+
+.headimg {
+	margin-left: auto;
+	float: right;
+}
+
+.navbar {
+  background-color: #9c1c34;
+  overflow: hidden;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 2.3vw;
+}
+
+/* Style the links inside the nav bar */
+.navbar a {
+  float: left;
+  color: #fcac34;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: white;
+  transition: 0.4s;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Add a color to the active link */
+.navbar a.active {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #fcac34;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.25em;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #fcac34;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtn:hover {
+  color: white;
+  transition: 0.4s;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dropdown-content {
+  transition: 0.4s;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  /*
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+  margin-top: 0.15vh;
+}
+
+.dropdown-content a {
+  float: none;
+  transition: 0.4s;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+ .dropdown-content a.active{
+  float: none;
+  transition: 0.4s;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: underline;
+  text-decoration-color: #fcac34;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.25em;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #fcac34;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: 0.4s;
+  display: block;
+}
+
+footer {
+  background-color: #3a3939;
+  border: 10px;
+  margin-top: 3vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  padding: 10px;
+  justify-content: center;
+  column-gap: auto;
+}
+
+.home-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px;
+  justify-content: center;
+  column-gap: auto;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: left;
+}
+
+address {
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+}
+
+h3 {
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-right: 10px;
+}
+
+.otherimg {
+  width: 27vw;
+  justify-self: center;
+  margin-right: 0.2vw;
+  margin-left: 0.2vw;
+}
+
+.footerimg {
+  width: 60%;
+  justify-self: center;
+}
+
+@media screen and (max-width: 700px) {
+    .home-img-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.slides {
+  display: none;
+  animation-name: fade;
+  animation-duration: 0.75s;
+}
+.slideimg {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  padding-top: 1vw;
+  margin: auto;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeslide, .dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+h1 {
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  background-color: #9c1c34;
+  border: 6px solid #9c1c34;
+  color: white;
+}
+
+h2 {
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  color: #9c1c34;
+  text-decoration: underline;
+  text-decoration-color: #fcac34;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3em;
+}
+
+p {
+  font-optical-sizing: auto;
+  font-size: 1.2em;
+  font-style: normal;
+  color: black;
+  font-family: "Source Sans 3", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+li {
+  font-optical-sizing: auto;
+  font-size: 1.2em;
+  font-style: normal;
+  color: black;
+  font-family: "Source Sans 3", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.content {
+  margin-right: 100px;
+  margin-left: 100px;
+  padding-bottom: 1vw;
+}
+
+.staggered-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column grid */
+    grid-gap: 40px; /* Space between grid items */
+    align-items: start;
+}
+
+/*Responsive adjustment */
+@media screen and (max-width: 768px) {
+    .staggered-layout {
+        grid-template-columns: 1fr; /* Single-column grid on smaller screens */
+    }
+}
+
+.left {
+  margin-left: 20%;
+  max-width: 30vw;
+}
+
+.right {
+  margin-right: 20%;
+  max-width: 30vw;
+  float: right;
+  text-justify: auto;
+}
+
+.list {
+  justify-self: center;
+  margin-right: 20vw;
+  margin-left: 20vw;
+}
+
+.list2 {
+  margin-right: 20vw;
+  margin-left: 20vw;
+}
+
+.list3 {
+  margin-right: 15vw;
+  margin-left: 15vw;
+  justify-self: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.bell {
+  border: 1px solid black;
+  padding: 6px 10px;
+  font-optical-sizing: auto;
+  font-size: 1.2em;
+  font-style: normal;
+  color: black;
+  font-family: "Source Sans 3", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.bellw {
+  border: 1px solid black;
+  padding: 9px 10px;
+  font-optical-sizing: auto;
+  font-size: 1.2em;
+  font-style: normal;
+  color: black;
+  font-family: "Source Sans 3", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.staffimg {
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.timeimg {
+  max-width: 60%;
+  margin-left: 20%;
+}
+
+.sltimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 15px;
+  justify-content: center;
+  column-gap: auto;
+  text-justify: none;
+}
+
+.leftw {
+  margin-left: 30%;
+  max-width: 25vw;
+}
+
+.rightw {
+  margin-right: 30%;
+  max-width: 25vw;
+  float: right;
+  text-justify: auto;
+}
